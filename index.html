@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>Currency Converter
-        <p class="instructions">Enter value and make currency selection...</p>
+        <p class="instructions">Enter value and make currency selections...</p>
     </header>
     <div class="background">
         <div class="container">
@@ -28,8 +28,8 @@
             <div class="convertFrom">
                 Currency on hand:
                 <!-- from currency -->
-                <select name="fromUnit" id="fromUnit" size="4" onchange="convertCurrency()" class="fromList">
-                    
+                <select name="fromUnit" id="fromUnit" size="5" onchange="convertCurrency()" class="fromList">
+                    <option value="fr-eur">Euro</option>
                     <option value="fr-usd">US Dollar</option>
                     <option value="fr-cdn">Canadian Dollar</option>
                     <option value="fr-btc">Bitcoin Digital Currency</option>
@@ -39,9 +39,9 @@
                 
             </div>
             <div class="convertTo">Convert to:
-                <select name="toUnit" id="toUnit" size="4" onchange="convertCurrency()" class="toList">
+                <select name="toUnit" id="toUnit" size="5" onchange="convertCurrency()" class="toList">
                     <!-- to currency -->
-                    
+                    <option value="to-eur">Euro</option>
                     <option value="to-usd">US Dollar</option>
                     <option value="to-cdn">Canadian Dollar</option>
                     <option value="to-btc">Bitcoin Digital Currency</option>
