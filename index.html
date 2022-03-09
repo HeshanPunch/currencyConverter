@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    
+    <link rel="stylesheet" type= "text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Rajdhani:wght@300;500;600&display=swap" rel="stylesheet">
+    <script src="currencyConverter.js"></script>
+    
+</head>
+<body>
+    <header>Currency Converter
+        <p class="instructions">Enter value and make currency selection...</p>
+    </header>
+    <div class="background">
+        <div class="container">
+            
+            <div class="userValue">
+                
+                <!-- user input value -->
+                <input name="userValue" class="input" id="userValue" placeholder="Enter Value" autofocus>
+            </div>
+            <div class="convertFrom">
+                Currency on hand:
+                <!-- from currency -->
+                <select name="fromUnit" id="fromUnit" size="4" onchange="convertCurrency()" class="fromList">
+                    
+                    <option value="fr-usd">US Dollar</option>
+                    <option value="fr-cdn">Canadian Dollar</option>
+                    <option value="fr-btc">Bitcoin Digital Currency</option>
+                    <option value="fr-eth">Ethereum Digital Currency</option>
+                </select>
+                
+                
+            </div>
+            <div class="convertTo">Convert to:
+                <select name="toUnit" id="toUnit" size="4" onchange="convertCurrency()" class="toList">
+                    <!-- to currency -->
+                    
+                    <option value="to-usd">US Dollar</option>
+                    <option value="to-cdn">Canadian Dollar</option>
+                    <option value="to-btc">Bitcoin Digital Currency</option>
+                    <option value="to-eth">Ethereum Digital Currency</option>
+                </select>
+            </div>
+            <div class="result">
+                <!-- print result -->
+                <p class="resultOut" id="resultOut"></p>
+                
+            </div>
+            
+        </div>
+    </div>
+    <footer>Heshan Punchihewa || CPRG 256(Block C)
+    </footer>
+</body>
+
+</html>
